@@ -1,31 +1,49 @@
-# Никита Сафронов — продуктовый аналитик
+<div align="center">
 
-Пять проектов, каждый отвечает на один бизнес-вопрос и заканчивается решением, а не графиком.
+# Никита Сафронов
 
-### [Воронка и удержание](https://github.com/kamthiss/product-funnel-retention)
-На каком этапе теряются пользователи и какие сегменты хуже возвращаются в продукт. Главная потеря — онбординг: его не проходят 46% зарегистрировавшихся, на android на 11 п.п. чаще, чем на ios. Paid_social удерживается примерно в полтора раза хуже organic.
-Python, PostgreSQL, SQL, Metabase, pytest
+**Продуктовый аналитик**
 
-### [Маржа и возвраты](https://github.com/kamthiss/ecommerce-margin-returns)
-Какие категории и каналы приносят прибыль, а какие только оборот. Electronics даёт половину продаж и 8% маржинального дохода, apparel теряет на возвратах больше всех. Итоги сверены независимыми запросами, суммы не размножаются при JOIN.
-PostgreSQL, dbt, SQL, Metabase
+Каждый проект отвечает на один бизнес-вопрос и заканчивается решением, а не графиком
 
-### [A/B-тест: не просто p-value, а решение](https://github.com/kamthiss/ab-test-decision)
-Внедрять ли новую страницу оформления заказа. Конверсия выросла значимо, но средний чек упал, и даже верхняя граница интервала выручки на пользователя не дотягивает до порога окупаемости. Решение — не внедрять. План анализа закоммичен до появления данных.
-Python, statsmodels, pytest, симуляции
+<br>
 
-### [Пайплайн, который замечает свои ошибки](https://github.com/kamthiss/data-quality-pipeline)
-Как понять, что отчёт обновился некорректно, раньше руководителя. Контракт данных с 12 блокирующими проверками и 11 сценариев сбоев с заранее известными исходами. Показано, где граница проверок: потерю данных самим источником без второго источника можно только заметить.
-Python, PostgreSQL, FastAPI, pytest
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+<img src="https://img.shields.io/badge/SQL-336791?style=flat-square" alt="SQL">
+<img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" alt="dbt">
+<img src="https://img.shields.io/badge/Metabase-509EE3?style=flat-square&logo=metabase&logoColor=white" alt="Metabase">
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
+<img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
 
-### [Отток и экономика удержания](https://github.com/kamthiss/churn-retention-economics)
-Кому предлагать скидку, чтобы она окупалась. Окупаемость кампании определяет сегмент клиента, а не риск оттока. Модель ранжирует лучше простого правила, но прибыли не добавляет, поэтому не внедряется. Итог — план запуска и эксперимента.
-Python, PostgreSQL, SQL, scikit-learn, pytest
+</div>
+
+<br>
+
+## Проекты
+
+| Проект | Бизнес-вопрос | Что получилось |
+|---|---|---|
+| **[Воронка и удержание](https://github.com/kamthiss/product-funnel-retention)**<br><sub>Python · PostgreSQL · Metabase · pytest</sub> | Где теряются пользователи и какие сегменты хуже возвращаются | Онбординг теряет **46%** зарегистрировавшихся, на android на **11 п.п.** больше, чем на ios. Paid_social удерживается в **1,5 раза** хуже organic |
+| **[Маржа и возвраты](https://github.com/kamthiss/ecommerce-margin-returns)**<br><sub>PostgreSQL · dbt · Metabase</sub> | Какие категории и каналы приносят прибыль, а какие только оборот | Electronics — **50,6%** продаж и **8%** маржинального дохода. Apparel теряет на возвратах больше всех |
+| **[A/B-тест: решение, а не p-value](https://github.com/kamthiss/ab-test-decision)**<br><sub>Python · statsmodels · pytest</sub> | Окупится ли новая страница оформления заказа | Конверсия **+0,91 п.п.**, но даже верхняя граница интервала выручки ниже порога окупаемости. **Не внедрять** |
+| **[Пайплайн качества данных](https://github.com/kamthiss/data-quality-pipeline)**<br><sub>Python · PostgreSQL · FastAPI · pytest</sub> | Как поймать некорректно обновлённый отчёт раньше руководителя | **12** блокирующих проверок и **11** сценариев сбоев с заранее известными исходами |
+| **[Отток и экономика удержания](https://github.com/kamthiss/churn-retention-economics)**<br><sub>Python · SQL · scikit-learn · pytest</sub> | Кому предлагать скидку, чтобы она окупалась | Окупаемость определяет **сегмент**, а не риск оттока. Модель точнее правила, но прибыли не добавляет, поэтому **не внедряется** |
+
+<br>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/kamthiss/product-funnel-retention/main/dashboard/screenshots/01_overview.png" alt="Дашборд воронки и удержания" width="100%">
+<sub>Дашборд проекта «Воронка и удержание» собирается одной командой</sub>
+</div>
+
+<br>
 
 ## Как устроены проекты
 
-- Определения метрик и правила анализа записаны до работы с данными.
-- Данные синтетические, с заранее заложенными ответами: так видно, находит ли анализ то, что в данных действительно есть.
-- Ключевые числа сверены независимым расчётом.
-- Каждый проект собирается с нуля одной командой и проходит свои тесты.
-- У каждого вывода есть раздел ограничений: чего данные не показывают.
+- Определения метрик и правила анализа записаны до работы с данными
+- Данные синтетические, с заложенными ответами: видно, находит ли анализ то, что в данных действительно есть
+- Ключевые числа сверены независимым расчётом
+- Каждый проект собирается с нуля одной командой и проходит свои тесты
+- У каждого вывода есть раздел ограничений
